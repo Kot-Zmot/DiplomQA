@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m7.45s</div>
+<div class="counter">1m17.15s</div>
 <p>duration</p>
 </div>
 </td>
@@ -73,84 +73,99 @@
 <a name="shouldErrorBuyInCreditWithDECLINEDCard()"></a>
 <h3 class="failures">Card number with status DECLINED for credit</h3>
 <span class="code">
-<pre>java.lang.NullPointerException
-	at ru.netology.test.TestPayInCredit.shouldErrorBuyInCreditWithDECLINEDCard(TestPayInCredit.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptTestMethod(InvocationInterceptor.java:118)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+<pre>Element should be visible {.notification_status_error}
+Element: '&lt;div class=&quot;notification notification_status_error notification_has-closer notification_stick-to_right notification_theme_alfa-on-white&quot; displayed:false&gt;&lt;/div&gt;'
+Actual value: hidden
+Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665326887.11.png
+Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665326887.11.html
+Timeout: 18 s.
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at app//com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app//com.sun.proxy.$Proxy20.shouldBe(Unknown Source)
+	at app//ru.netology.page.PageTravel.notificationError(PageTravel.java:89)
+	at app//ru.netology.test.TestPayInCredit.shouldErrorBuyInCreditWithDECLINEDCard(TestPayInCredit.java:75)
+	at java.base@11.0.20.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.20.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.20.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.20.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.api.extension.InvocationInterceptor.interceptTestMethod(InvocationInterceptor.java:118)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.20.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@11.0.20.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at app//org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base@11.0.20.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.20.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.20.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.20.1/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
@@ -163,8 +178,8 @@
 	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </pre>
 </span>
 </div>
@@ -175,8 +190,8 @@
 <pre>Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583295407.7.png
-Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583295407.7.html
+Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665288186.8.png
+Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665288186.8.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -289,8 +304,8 @@ Timeout: 4 s.
 <pre>Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583282179.6.png
-Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583282179.6.html
+Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665280058.7.png
+Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665280058.7.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -403,8 +418,8 @@ Timeout: 4 s.
 <pre>Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583300642.8.png
-Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583300642.8.html
+Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665293415.9.png
+Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665293415.9.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -517,8 +532,8 @@ Timeout: 4 s.
 <pre>Element should be text &quot;Неверный формат&quot; {.input_has-label.findBy(text &quot;Владелец&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Владелец&lt;/span&gt;'
 Actual value: text=&quot;Владелец&quot;
-Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583339990.11.png
-Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583339990.11.html
+Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665347512.13.png
+Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665347512.13.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -631,8 +646,8 @@ Timeout: 4 s.
 <pre>Element should be text &quot;Неверно указан срок действия карты&quot; {.input_has-label.findBy(text &quot;Месяц&quot;)}
 Element: '&lt;span class=&quot;input input_type_text input_view_default input_size_m input_width_available input_has-label input_has-value input_theme_alfa-on-white&quot;&gt;Месяц&lt;/span&gt;'
 Actual value: text=&quot;Месяц&quot;
-Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583312342.9.png
-Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583312342.9.html
+Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665307516.10.png
+Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665307516.10.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -747,8 +762,8 @@ Element: '&lt;span class=&quot;input input_type_text input_view_default input_si
 Неверный формат&lt;/span&gt;'
 Actual value: text=&quot;Номер карты
 Неверный формат&quot;
-Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583321373.10.png
-Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693583321373.10.html
+Screenshot: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665331674.12.png
+Page source: file:/E:/Automatization/DiplomQA/DiplomQA/build/reports/tests/1693665331674.12.html
 Timeout: 4 s.
 	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:149)
 	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
@@ -858,8 +873,14 @@ Timeout: 4 s.
 <a name="shouldSuccessfulBuyInCreditWithAPPROVEDCard()"></a>
 <h3 class="failures">Card number with status APPROVED for credit</h3>
 <span class="code">
-<pre>java.lang.NullPointerException
-	at ru.netology.test.TestPayInCredit.shouldSuccessfulBuyInCreditWithAPPROVEDCard(TestPayInCredit.java:56)
+<pre>org.opentest4j.AssertionFailedError: expected: &lt;5a86e6b0-1ba9-488c-a394-8cbb46247a1a&gt; but was: &lt;null&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)
+	at ru.netology.test.TestPayInCredit.shouldSuccessfulBuyInCreditWithAPPROVEDCard(TestPayInCredit.java:58)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -968,109 +989,109 @@ Timeout: 4 s.
 <tr>
 <td class="failures">Card number with status DECLINED for credit</td>
 <td class="failures">shouldErrorBuyInCreditWithDECLINEDCard()</td>
-<td class="failures">4.224s</td>
+<td class="failures">19.373s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">Card number with status FIFTEEN for credit</td>
 <td class="success">shouldErrorCreditWithFIFTEENCard()</td>
-<td class="success">1.059s</td>
+<td class="success">1.055s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Card number with status INVALID for credit</td>
 <td class="success">shouldErrorCreditWithINVALIDCard()</td>
-<td class="success">7.936s</td>
+<td class="success">2.645s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Card number with status ZERO for credit</td>
 <td class="success">shouldErrorCreditWithZEROCard()</td>
-<td class="success">6.330s</td>
+<td class="success">8.727s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">Cyrillic Name for credit</td>
 <td class="failures">shouldErrorCyrillicNameForCredit()</td>
-<td class="failures">5.283s</td>
+<td class="failures">5.457s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">Year Less for credit</td>
 <td class="success">shouldErrorLessYearForCredit()</td>
-<td class="success">1.083s</td>
+<td class="success">1.084s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Year More for credit</td>
 <td class="success">shouldErrorMoreYearForCredit()</td>
-<td class="success">1.088s</td>
+<td class="success">1.099s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">Number Name for credit</td>
 <td class="failures">shouldErrorNumberNameForCredit()</td>
-<td class="failures">5.275s</td>
+<td class="failures">5.306s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">One digits CVC for credit</td>
 <td class="success">shouldErrorOneDigCVCForCredit()</td>
-<td class="success">1.139s</td>
+<td class="success">1.133s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Month One Digit for credit</td>
 <td class="success">shouldErrorOneDigitMonthForCredit()</td>
-<td class="success">1.088s</td>
+<td class="success">1.073s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">One letter Name for credit</td>
 <td class="failures">shouldErrorOneLetterNameForCredit()</td>
-<td class="failures">5.237s</td>
+<td class="failures">5.228s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">Month Over for credit</td>
 <td class="success">shouldErrorOverMonthForCredit()</td>
-<td class="success">1.088s</td>
+<td class="success">1.086s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">Special characters Name for credit</td>
 <td class="failures">shouldErrorSpecCharNameForCredit()</td>
-<td class="failures">5.204s</td>
+<td class="failures">5.400s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">Two digits CVC for credit</td>
 <td class="success">shouldErrorTwoDigCVCForCredit()</td>
-<td class="success">1.158s</td>
+<td class="success">1.114s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">Month ZERO for credit</td>
 <td class="failures">shouldErrorZeroMonthForCredit()</td>
-<td class="failures">5.363s</td>
+<td class="failures">5.369s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">Year ZERO for credit</td>
 <td class="success">shouldErrorZeroYearForCredit()</td>
-<td class="success">1.091s</td>
+<td class="success">1.123s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">Empty form for credit</td>
 <td class="failures">shouldMessageFilInFieldInCredit()</td>
-<td class="failures">4.784s</td>
+<td class="failures">4.766s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">Card number with status APPROVED for credit</td>
 <td class="failures">shouldSuccessfulBuyInCreditWithAPPROVEDCard()</td>
-<td class="failures">9.021s</td>
+<td class="failures">6.107s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -1083,7 +1104,7 @@ Timeout: 4 s.
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 1 сент. 2023 г., 18:49:00</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 2 сент. 2023 г., 17:35:48</p>
 </div>
 </div>
 </body>
