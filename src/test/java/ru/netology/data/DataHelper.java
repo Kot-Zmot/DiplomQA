@@ -57,11 +57,6 @@ public class DataHelper {
         return LocalDate.now().plusYears(shift).format(DateTimeFormatter.ofPattern("yy"));
     }
 
-
-    public static String generateYearMinus(int shift) {
-        return LocalDate.now().minusYears(shift).format(DateTimeFormatter.ofPattern("yy"));
-    }
-
     public static String generateHolder() {
 
         return faker.name().firstName().toUpperCase(Locale.ROOT) + " "

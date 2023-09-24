@@ -5,9 +5,9 @@
 [Ссылка на Дипломное задание](https://github.com/netology-code/qa-diploma).
 
 ## Тестовая документация
-1. [План тестирования]();
-1. [Отчёт по итогам тестирования]();
-1. [Отчет по итогам автоматизации]()
+1. [План тестирования](https://github.com/Kot-Zmot/DiplomQA/blob/main/docs/Plan.md);
+1. [Отчёт по итогам тестирования](https://github.com/Kot-Zmot/DiplomQA/blob/main/docs/Report.md);
+1. [Отчет по итогам автоматизации](https://github.com/Kot-Zmot/DiplomQA/blob/main/docs/Summary.md)
 
 ## Запуск приложения
 ### Подготовительный этап

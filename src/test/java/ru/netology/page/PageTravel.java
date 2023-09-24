@@ -53,7 +53,7 @@ public class PageTravel {
 
     public int getPriceInKops() {
         String[] str = $$("li").findBy(Condition.text("руб")).getText().split(" ");
-        return Integer.valueOf(str[1] + str[2]) * 100;
+        return Integer.parseInt(str[1] + str[2]) * 100;
 
     }
 
@@ -81,31 +81,31 @@ public class PageTravel {
         continueButton.click();
     }
 
-    public void notificationOk() {
+    public void waitNotificationOk() {
         notificationOk.shouldBe(visible, Duration.ofSeconds(18));
     }
 
-    public void notificationError() {
+    public void waitNotificationError() {
         notificationError.shouldBe(visible, Duration.ofSeconds(18));
     }
 
-    public void notificationMessageOwner(String message) {
+    public void waitNotificationMessageOwner(String message) {
         ownerField.shouldBe(Condition.text(message));
     }
 
-    public void notificationMessageNumber(String message) {
+    public void waitNotificationMessageNumber(String message) {
         numberField.shouldBe(Condition.text(message));
     }
 
-    public void notificationMessageMonth(String message) {
+    public void waitNotificationMessageMonth(String message) {
         monthField.shouldBe(Condition.text(message));
     }
 
-    public void notificationMessageYear(String message) {
+    public void waitNotificationMessageYear(String message) {
         yearField.shouldBe(Condition.text(message));
     }
 
-    public void notificationMessageCVC(String message) {
+    public void waitNotificationMessageCVC(String message) {
         cvcField.shouldBe(Condition.text(message));
     }
 

@@ -15,6 +15,7 @@ public class TestPayInCredit {
 
     private static DataHelper.CreditRequestEntity credit;
     private static DataHelper.OrderEntity order;
+    private static String url = System.getProperty("app.url");
 
     @BeforeAll
     static void setUpAll() {
@@ -28,7 +29,7 @@ public class TestPayInCredit {
 
     @BeforeEach
     void setup() {
-        open("http://localhost:8080");
+        open(url);
     }
 
     @AfterEach
@@ -49,7 +50,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationOk();
+        page.waitNotificationOk();
 
         credit = SQLHelper.getCreditRequestEntity();
         order = SQLHelper.getOrderEntity();
@@ -72,7 +73,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationError();
+        page.waitNotificationError();
 
         assertEquals(status, SQLHelper.getCreditRequestEntity().getStatus());
 
@@ -85,11 +86,11 @@ public class TestPayInCredit {
         PageTravel page = new PageTravel();
         page.buyInCredit();
         page.clickContinue();
-        page.notificationMessageNumber("Поле обязательно для заполнения");
-        page.notificationMessageMonth("Поле обязательно для заполнения");
-        page.notificationMessageYear("Поле обязательно для заполнения");
-        page.notificationMessageOwner("Поле обязательно для заполнения");
-        page.notificationMessageCVC("Поле обязательно для заполнения");
+        page.waitNotificationMessageNumber("Поле обязательно для заполнения");
+        page.waitNotificationMessageMonth("Поле обязательно для заполнения");
+        page.waitNotificationMessageYear("Поле обязательно для заполнения");
+        page.waitNotificationMessageOwner("Поле обязательно для заполнения");
+        page.waitNotificationMessageCVC("Поле обязательно для заполнения");
     }
 
     @Test
@@ -105,7 +106,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationError();
+        page.waitNotificationError();
         assertEquals(null, SQLHelper.getOrderEntity());
         assertEquals(null, SQLHelper.getCreditRequestEntity());
 
@@ -124,7 +125,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationError();
+        page.waitNotificationError();
         assertEquals(null, SQLHelper.getOrderEntity());
         assertEquals(null, SQLHelper.getCreditRequestEntity());
 
@@ -143,7 +144,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageNumber("Неверный формат");
+        page.waitNotificationMessageNumber("Неверный формат");
 
     }
 
@@ -160,7 +161,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageMonth("Неверно указан срок действия карты");
+        page.waitNotificationMessageMonth("Неверно указан срок действия карты");
 
     }
 
@@ -177,7 +178,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageMonth("Неверно указан срок действия карты");
+        page.waitNotificationMessageMonth("Неверно указан срок действия карты");
 
     }
 
@@ -194,7 +195,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageMonth("Неверный формат");
+        page.waitNotificationMessageMonth("Неверный формат");
 
     }
 
@@ -211,7 +212,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageYear("Истёк срок действия карты");
+        page.waitNotificationMessageYear("Истёк срок действия карты");
 
     }
 
@@ -228,7 +229,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageYear("Неверно указан срок действия карты");
+        page.waitNotificationMessageYear("Неверно указан срок действия карты");
 
     }
 
@@ -241,11 +242,11 @@ public class TestPayInCredit {
         page.buyInCredit();
         page.inputNumberCard(status);
         page.inputMonth(DataHelper.generateMonthPlus(0));
-        page.inputYear(DataHelper.generateYearMinus(1));
+        page.inputYear(DataHelper.generateYearPlus(-1));
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageYear("Истёк срок действия карты");
+        page.waitNotificationMessageYear("Истёк срок действия карты");
 
     }
 
@@ -262,7 +263,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolderCyrillic());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageOwner("Неверный формат");
+        page.waitNotificationMessageOwner("Неверный формат");
 
     }
 
@@ -279,7 +280,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolderNumeric());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageOwner("Неверный формат");
+        page.waitNotificationMessageOwner("Неверный формат");
 
     }
 
@@ -296,7 +297,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolderOneSymbol());
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageOwner("Неверный формат");
+        page.waitNotificationMessageOwner("Неверный формат");
 
     }
 
@@ -313,7 +314,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolderSpecChar(5));
         page.inputCVC(3);
         page.clickContinue();
-        page.notificationMessageOwner("Неверный формат");
+        page.waitNotificationMessageOwner("Неверный формат");
 
     }
 
@@ -330,7 +331,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(2);
         page.clickContinue();
-        page.notificationMessageCVC("Неверный формат");
+        page.waitNotificationMessageCVC("Неверный формат");
 
     }
 
@@ -347,7 +348,7 @@ public class TestPayInCredit {
         page.inputOwner(DataHelper.generateHolder());
         page.inputCVC(1);
         page.clickContinue();
-        page.notificationMessageCVC("Неверный формат");
+        page.waitNotificationMessageCVC("Неверный формат");
 
     }
 }
